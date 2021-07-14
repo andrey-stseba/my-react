@@ -1,0 +1,41 @@
+@import "./../../common/styles/vars";
+@import "./../../common/styles/templates";
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  @extend %flex-container;
+
+  max-width: $mxw-form;
+  min-width: $mnw-form;
+  width: 100%;
+
+  margin: 10px auto 0;
+
+  border: 3px solid blueviolet;
+  border-radius: 5px;
+}
+
+.labelSignUp {
+  margin: 5px 10px;
+  display: flex;
+}
+
+.inputSignUp {
+  margin-left: auto;
+  width: 80%;
+}
+
+.valid {
+  background-color: $valid-color;
+}
+
+.invalid {
+  background-color: $invalid-color;
+}
+
+.buttonSingUp {
+  margin: 5px auto;
+}
