@@ -1,0 +1,76 @@
+@import "./../../common/styles/templates";
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  @extend %flex-container;
+  flex-direction: row;
+  //   justify-content: space-between;
+
+  max-width: 800px;
+  min-width: 300px;
+  width: 100%;
+
+  margin: 10px auto 0;
+
+  border: 15px solid #008060;
+}
+
+.containerDay {
+  @extend %flex-container;
+  width: 50%;
+  background-color: #2cdaae;
+  align-items: center;
+
+  .thisDay {
+    font-size: 25px;
+    color: green;
+    text-transform: uppercase;
+    margin-top: 30px;
+  }
+
+  .thisNumber {
+    font-size: 150px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+}
+.containerMonth {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.containerTable {
+  margin: 30px 10px 20px;
+}
+
+.containerCaption {
+  color: #008060;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.containerThead {
+  color: red;
+}
+
+.containerTd {
+  padding: 6px;
+  color: gray;
+  text-align: right;
+}
+.sameDayBox {
+  border: 3px solid red;
+  border-radius: 50%;
+  color: red;
+  font-weight: bold;
+}
+
+.hideAnotherMonth {
+  color: white;
+}

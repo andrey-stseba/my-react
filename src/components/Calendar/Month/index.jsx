@@ -1,8 +1,9 @@
-import React from 'react';
-import Week from './../Week';
-import { format, getWeeksInMonth, getWeek } from 'date-fns';
+import React from "react";
+import Week from "./../Week";
+import { format, getWeeksInMonth, getWeek } from "date-fns";
+import styles from "./../Calendar.module.scss";
 
-const getWeeks = date => {
+const getWeeks = (date) => {
   const firstDayOfMonth = new Date(date.getFullYear(), date.getMonth(), 1);
   const firstWeek = getWeek(firstDayOfMonth);
 
@@ -20,11 +21,13 @@ function Month(props) {
   const { date } = props;
 
   return (
-    <section>
-      <table>
+    <section className={styles.containerMonth}>
+      <table className={styles.containerTable}>
         {/* Получить месяц и год */}
-        <caption>{format(date, 'MMMM y')}</caption>
-        <thead>
+        <caption className={styles.containerCaption}>
+          {format(date, "MMMM y")}
+        </caption>
+        <thead className={styles.containerThead}>
           <tr>
             <th>S</th>
             <th>M</th>

@@ -1,8 +1,7 @@
-import "./App.css";
 import React from "react";
 
-import SignUp from "./components/SignUp";
+import Calendar from "./components/Calendar";
 
-const App = () => <SignUp />;
+const App = () => <Calendar />;
 
 export default App;
