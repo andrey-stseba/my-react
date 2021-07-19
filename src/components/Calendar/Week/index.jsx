@@ -13,7 +13,7 @@ const getDaysOfWeek = (date, week, year) => {
     const dateIndex = addDays(startOfWeek, i);
 
     const sameDayClass = classNames(styles.containerTd, {
-      [styles.sameDayBox]: isSameDay(date, dateIndex),
+      [styles.sameDayBox]: isSameDay(new Date(), dateIndex),
     });
 
     isSameMonth(date, dateIndex)
@@ -42,7 +42,7 @@ function Week(props) {
 }
 
 Week.propTypes = {
-  date: PropTypes.instanceOf(Date),
+  date: PropTypes.instanceOf(Date).isRequired,
   week: PropTypes.number.isRequired,
   year: PropTypes.number.isRequired,
 };

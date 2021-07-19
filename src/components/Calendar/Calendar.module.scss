@@ -1,4 +1,5 @@
 @import "./../../common/styles/templates";
+@import "./../../common/styles/vars";
 
 * {
   box-sizing: border-box;
@@ -7,7 +8,7 @@
 .container {
   @extend %flex-container;
   flex-direction: row;
-  //   justify-content: space-between;
+  flex-wrap: wrap;
 
   max-width: 800px;
   min-width: 300px;
@@ -15,14 +16,21 @@
 
   margin: 10px auto 0;
 
-  border: 15px solid #008060;
+  border: 15px solid $border-color;
+
+  & > * {
+    @extend %flex-container;
+    width: 50%;
+    align-items: center;
+    flex-basis: 240px;
+    flex-grow: 1;
+  }
 }
 
 .containerDay {
-  @extend %flex-container;
-  width: 50%;
+  flex-direction: column;
+
   background-color: #2cdaae;
-  align-items: center;
 
   .thisDay {
     font-size: 25px;
@@ -33,15 +41,12 @@
 
   .thisNumber {
     font-size: 150px;
-    color: white;
+    color: $light-color;
     padding: 10px;
     text-align: center;
   }
 }
 .containerMonth {
-  width: 50%;
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 .containerTable {
@@ -49,14 +54,14 @@
 }
 
 .containerCaption {
-  color: #008060;
+  color: $border-color;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 25px;
   margin-bottom: 20px;
 }
 .containerThead {
-  color: red;
+  color: $red-color;
 }
 
 .containerTd {
@@ -65,12 +70,12 @@
   text-align: right;
 }
 .sameDayBox {
-  border: 3px solid red;
+  border: 3px solid $red-color;
   border-radius: 50%;
-  color: red;
+  color: $red-color;
   font-weight: bold;
 }
 
 .hideAnotherMonth {
-  color: white;
+  color: $light-color;
 }
