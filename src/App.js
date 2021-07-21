@@ -1,7 +1,7 @@
 import React from "react";
 
-import Calendar from "./components/Calendar";
+import ShowAllComponents from "./components/ShowAllComponents";
 
-const App = () => <Calendar />;
+const App = () => <ShowAllComponents />;
 
 export default App;
