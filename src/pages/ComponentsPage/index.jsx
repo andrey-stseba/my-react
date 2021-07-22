@@ -13,12 +13,14 @@ import LoginForm from "./../../components/LoginForm";
 import SignUp from "./../../components/SignUp";
 import Stopwatch from "./../../components/Stopwatch";
 import StopwatchWithTimeout from "./../../components/StopwatchWithTimeout";
+import NotFound from "./../../components/NotFound";
+import styles from "./ComponentsPage.module.scss";
 
 function ComponentsPage() {
   const { path, url } = useRouteMatch();
   return (
     <>
-      <ul>
+      <ul className={styles.containerComponentsPage}>
         <li>
           <Link to={`${url}/calendar`}>Calendar</Link>
         </li>
@@ -68,6 +70,7 @@ function ComponentsPage() {
         <Route exact path={path}>
           <h3>Please select a component.</h3>
         </Route>
+        <Route path={`${path}/*`} component={NotFound} />
       </Switch>
     </>
   );

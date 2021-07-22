@@ -1,0 +1,6 @@
+@import "./../../common/styles/templates";
+.containerComponentsPage {
+  li > a {
+    @extend %text-decoration-none;
+  }
+}

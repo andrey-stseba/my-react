@@ -7,6 +7,7 @@
 
 .container {
   @extend %flex-container;
+  flex-direction: column;
 
   max-width: $mxw-form;
   min-width: $mnw-form;

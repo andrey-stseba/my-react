@@ -1,0 +1,15 @@
+@import "./../../common/styles/templates";
+@import "./../../common/styles/vars";
+
+* {
+  box-sizing: border-box;
+}
+
+.aboutPageContainer {
+  @extend %flex-container;
+  flex-direction: column;
+  width: 542px;
+  padding: 35px;
+
+  font-size: $font-s14;
+}

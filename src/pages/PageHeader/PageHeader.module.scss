@@ -1,0 +1,26 @@
+@import "./../../common/styles/vars";
+@import "./../../common/styles/templates";
+
+* {
+  box-sizing: border-box;
+}
+
+.containerPageHeader {
+  @extend %flex-container;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+
+  & > * {
+    @extend %list-style-none;
+    margin-right: 20px;
+  }
+  li > a {
+    @extend %text-decoration-none;
+  }
+  .logoHome {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+}
