@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import styles from "./Counter.module.css";
 // rcc
 class Counter extends Component {
   //rconst
@@ -22,7 +23,7 @@ class Counter extends Component {
     this.setState({ counter: counter + step }); // +rerender
   };
 
-  changeStep = e => {
+  changeStep = (e) => {
     this.setState({ step: Number(e.target.value) });
   };
 
@@ -30,13 +31,22 @@ class Counter extends Component {
     const { counter, step } = this.state;
 
     return (
-      <>
+      <div className={styles.container}>
         <div>{counter}</div>
-        <input type="number" value={step} onChange={this.changeStep} />
+        <input
+          className={styles.inputBox}
+          type="number"
+          value={step}
+          onChange={this.changeStep}
+        />
         <br />
-        <button onClick={this.decrement}>-</button>
-        <button onClick={this.increment}>+</button>
-      </>
+        <button className={styles.buttonBox} onClick={this.decrement}>
+          -
+        </button>
+        <button className={styles.buttonBox} onClick={this.increment}>
+          +
+        </button>
+      </div>
     );
   }
 }
