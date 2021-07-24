@@ -1,0 +1,12 @@
+@import "./../../common/styles/vars";
+@import "./../../common/styles/templates";
+
+* {
+  box-sizing: border-box;
+}
+
+.containerAllPages {
+  @extend %flex-container;
+  flex-direction: column;
+  height: 100vh;
+}

@@ -8,8 +8,11 @@
 .containerPageHeader {
   @extend %flex-container;
   flex-direction: row;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
+
+  background-color: $backGHF-color;
+  margin-top: 0;
 
   & > * {
     @extend %list-style-none;

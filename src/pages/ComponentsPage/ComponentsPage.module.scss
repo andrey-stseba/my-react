@@ -1,5 +1,14 @@
 @import "./../../common/styles/templates";
+@import "./../../common/styles/vars";
+
 .containerComponentsPage {
+  padding-left: 60px;
+  li {
+    list-style: none;
+    background: url(./../../logo.svg) no-repeat 0 1px;
+    padding-left: 34px;
+    font-size: $font-s20;
+  }
   li > a {
     @extend %text-decoration-none;
   }

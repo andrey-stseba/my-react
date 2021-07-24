@@ -4,8 +4,7 @@ import logo from "./../../logo.svg";
 
 function HomePage() {
   return (
-    <div>
-      {" "}
+    <div className="App">
       <img src={logo} className="App-logo" alt="logo" />
     </div>
   );

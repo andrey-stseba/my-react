@@ -8,11 +8,15 @@
 .footerPageContainer {
   @extend %flex-container;
   flex-direction: row;
+  justify-content: space-around;
 
   padding: 35px;
+  margin-top: auto;
   font-size: $font-s14;
+  background-color: $backGHF-color;
   & > * {
-    margin-right: 100px;
+    // margin-right: 100px;
+    align-items: center;
   }
   p > a {
     @extend %text-decoration-none;

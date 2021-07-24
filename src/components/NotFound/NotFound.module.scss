@@ -1,0 +1,16 @@
+@import "./../../common/styles/vars";
+@import "./../../common/styles/templates";
+
+* {
+  box-sizing: border-box;
+}
+.containerNotFound {
+  @extend %flex-container;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+  font-size: $font-s20;
+  img {
+    border-radius: 30%;
+  }
+}
