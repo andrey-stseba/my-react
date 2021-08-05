@@ -15,6 +15,7 @@ import Stopwatch from "./../../components/Stopwatch";
 import StopwatchWithTimeout from "./../../components/StopwatchWithTimeout";
 import NotFound from "./../../components/NotFound";
 import styles from "./ComponentsPage.module.scss";
+import UsersListHW from "../../components/UsersListHW";
 
 function ComponentsPage() {
   const { path, url } = useRouteMatch();
@@ -44,6 +45,9 @@ function ComponentsPage() {
             Stopwatch With Timeout
           </Link>
         </li>
+        <li>
+          <Link to={`${url}/user-list-hw`}>User List HW</Link>
+        </li>
       </ul>
       <Switch>
         <Route path={`${path}/calendar`}>
@@ -66,6 +70,9 @@ function ComponentsPage() {
         </Route>
         <Route path={`${path}/stopwatch-with-timeout`}>
           <StopwatchWithTimeout />
+        </Route>
+        <Route path={`${path}/user-list-hw`}>
+          <UsersListHW />
         </Route>
         <Route exact path={path}>
           <h3>Please select a component.</h3>

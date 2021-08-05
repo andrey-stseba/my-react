@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+.container {
+  min-width: 500px;
+  max-width: 1400px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.usersContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 50px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.userClass {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+
+  background: no-repeat center rgb(224, 255, 45)
+    url("https://st.depositphotos.com/1431107/4833/i/600/depositphotos_48336881-stock-photo-football-field.jpg");
+  background-size: 100% 80%;
+
+  border: 6px solid rgb(13, 0, 128);
+}
+
+.userBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 400px;
+}
+
+img {
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.foto {
+  width: 150px;
+  height: 150px;
+  margin: 0 0 0 10px;
+}
+
+.name {
+  width: 200px;
+  margin: 0;
+  margin-left: auto;
+  text-align: center;
+}
+
+.ageBox {
+  color: yellow;
+}
+
+.iconHeart {
+  position: absolute;
+  left: 13%;
+  top: 90%;
+}
+
+.likeCount {
+  position: absolute;
+  font-size: 1.7rem;
+}
+
+.iconLike {
+  position: absolute;
+  right: 10%;
+  top: 90%;
+  cursor: pointer;
+}
+
+.iconRedCard {
+  margin: 30px 5px 30px 20px;
+  cursor: pointer;
+}
+
+.clickedElement {
+  border: 6px solid yellow;
+  background-color: blue;
+}
