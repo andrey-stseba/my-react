@@ -49,10 +49,12 @@
   height: 400px;
 }
 
-img {
+img,
+button {
   border-radius: 50%;
   overflow: hidden;
   object-fit: cover;
+  padding: 0;
 }
 .foto {
   width: 150px;
@@ -69,6 +71,8 @@ img {
 
 .ageBox {
   color: yellow;
+  text-align: center;
+  margin-right: 5px;
 }
 
 .iconHeart {
@@ -90,7 +94,7 @@ img {
 }
 
 .iconRedCard {
-  margin: 30px 5px 30px 20px;
+  /* margin: 30px 5px 30px 20px; */
   cursor: pointer;
 }
 

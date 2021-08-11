@@ -1,49 +1,28 @@
 import React, { Component } from "react";
 import styles from "./UserListItemHW.module.css";
+import ButtonDelUser from "../ButtonDelUser";
+import ButtonLikeUser from "../ButtonLikeUser";
 
 export default function UserListItemHW(props) {
-  const {
-    user: { id, firstName, lastName, age, imgSrc, likesCount, isSelected },
-    handlers: { clickUser, addLike, deleteUser },
-    imgIcons: { likeUp, redСard, heart },
-  } = props;
+  const { user, handlers, imgIcons } = props;
 
   function userSelectClasess() {
-    return isSelected
+    return user.isSelected
       ? `${styles.userClass} ${styles.clickedElement}`
       : styles.userClass;
   }
 
   return (
     <li className={userSelectClasess()}>
-      <div className={styles.userBox} onClick={clickUser}>
-        <img className={styles.foto} src={imgSrc} alt="foto" />
+      <div className={styles.userBox} onClick={handlers.clickUser}>
+        <img className={styles.foto} src={user.imgSrc} alt="foto" />
         <h2 className={styles.name}>
-          {firstName} {lastName}
+          {user.firstName} {user.lastName}
         </h2>
-        <p className={styles.ageBox}>Возраст: {age}</p>
-        <img
-          className={styles.iconRedCard}
-          src={redСard}
-          width="50px"
-          height="50px"
-          alt="icon"
-          onClick={deleteUser}
-        />
+        <p className={styles.ageBox}>Возраст: {user.age}</p>
+        <ButtonDelUser handlers={handlers} imgIcons={imgIcons} />
       </div>
-
-      <div className={styles.iconHeart}>
-        <img src={heart} width="30px" height="30px" alt="icon" />
-        <span class={styles.likeCount}>{likesCount}</span>
-      </div>
-      <img
-        className={styles.iconLike}
-        src={likeUp}
-        width="30px"
-        height="30px"
-        alt="icon"
-        onClick={addLike}
-      />
+      <ButtonLikeUser user={user} handlers={handlers} imgIcons={imgIcons} />
     </li>
   );
 }
