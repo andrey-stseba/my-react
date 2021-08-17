@@ -1,0 +1,21 @@
+@import './../../../common/styles/colums_grid';
+
+.signUpContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+.buttonSignUp {
+  color: #ffffff;
+  background-color: #28d2d0;
+  border: none;
+  padding: 5px 6px;
+  border-radius: 2px;
+  width: 90%;
+  height: 80px;
+  cursor: pointer;
+}

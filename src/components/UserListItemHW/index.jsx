@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import styles from "./UserListItemHW.module.css";
-import ButtonDelUser from "../ButtonDelUser";
-import ButtonLikeUser from "../ButtonLikeUser";
+import React, { Component } from 'react';
+import styles from './UserListItemHW.module.css';
+import ButtonDelUser from '../ButtonDelUser';
+import ButtonLikeUser from '../ButtonLikeUser';
 
-export default function UserListItemHW(props) {
+export default function UserListItemHW (props) {
   const { user, handlers, imgIcons } = props;
 
-  function userSelectClasess() {
+  function userSelectClasess () {
     return user.isSelected
       ? `${styles.userClass} ${styles.clickedElement}`
       : styles.userClass;
@@ -15,7 +15,7 @@ export default function UserListItemHW(props) {
   return (
     <li className={userSelectClasess()}>
       <div className={styles.userBox} onClick={handlers.clickUser}>
-        <img className={styles.foto} src={user.imgSrc} alt="foto" />
+        <img className={styles.foto} src={user.imgSrc} alt='foto' />
         <h2 className={styles.name}>
           {user.firstName} {user.lastName}
         </h2>
