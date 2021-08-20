@@ -1,23 +1,25 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link,
   useRouteMatch,
-} from "react-router-dom";
-import Calendar from "./../../components/Calendar";
-import Counter from "./../../components/Counter";
-import Greeting from "./../../components/Greeting";
-import LoginForm from "./../../components/LoginForm";
-import SignUp from "./../../components/SignUp";
-import Stopwatch from "./../../components/Stopwatch";
-import StopwatchWithTimeout from "./../../components/StopwatchWithTimeout";
-import NotFound from "./../../components/NotFound";
-import styles from "./ComponentsPage.module.scss";
-import UsersListHW from "../../components/UsersListHW";
+} from 'react-router-dom';
+import Calendar from './../../components/Calendar';
+import Counter from './../../components/Counter';
+import Greeting from './../../components/Greeting';
+// import LogInForm from './../../components/forms/LogInForm';
+// import SignUpForm from './../../components/forms/SignUpForm';
+import Stopwatch from './../../components/Stopwatch';
+import StopwatchWithTimeout from './../../components/StopwatchWithTimeout';
+import NotFound from './../../components/NotFound';
+import styles from './ComponentsPage.module.scss';
+import UsersListHW from '../../components/UsersListHW';
+import LoginFormPage from '../LoginFormPage';
+import SignUpPage from '../SignUpFormPage';
 
-function ComponentsPage() {
+function ComponentsPage () {
   const { path, url } = useRouteMatch();
   return (
     <>
@@ -60,10 +62,10 @@ function ComponentsPage() {
           <Greeting name={`Andrey`} />
         </Route>
         <Route path={`${path}/login-form`}>
-          <LoginForm />
+          <LoginFormPage />
         </Route>
         <Route path={`${path}/sign-up`}>
-          <SignUp />
+          <SignUpPage />
         </Route>
         <Route path={`${path}/stopwatch`}>
           <Stopwatch />

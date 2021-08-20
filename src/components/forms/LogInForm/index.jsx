@@ -2,6 +2,7 @@ import React from 'react';
 import { Formik, Form } from 'formik';
 import { LOGIN_SCHEMA } from '../../../utils/validatingSchemas';
 import Input from '../Input';
+import styles from './LogInForm.module.scss';
 
 function LogInForm () {
   const loginFormInitialValues = {
@@ -22,15 +23,18 @@ function LogInForm () {
       {formikProps => {
         return (
           <Form>
-            <Input
-              type='text'
-              name='email'
-              placeholder='Email Address'
-              autofocus
-            />
-            <Input type='password' name='password' placeholder='Password' />
-
-            <button type='submit'>Login</button>
+            <div className={styles.loginContainer}>
+              <Input
+                type='text'
+                name='email'
+                placeholder='Email Address'
+                autofocus
+              />
+              <Input type='password' name='password' placeholder='Password' />
+              <button type='submit' className={styles.buttonLogin}>
+                Login
+              </button>
+            </div>
           </Form>
         );
       }}

@@ -48,7 +48,7 @@ function SignUpForm () {
                 name='displayName'
                 placeholder='Display Name'
               />
-              <Input type='text' name='email' placeholder='email Address' />
+              <Input type='text' name='email' placeholder='Email Address' />
               <Input type='password' name='password' placeholder='Password' />
               <Input
                 type='password'

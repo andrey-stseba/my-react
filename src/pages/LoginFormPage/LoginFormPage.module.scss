@@ -1,0 +1,46 @@
+.loginContainer {
+  box-sizing: border-box;
+  background-color: #3ea9f5;
+  min-width: 600px;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+.headerPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 26px;
+  padding-left: 45px;
+  padding-right: 100px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.linkLoginBox {
+  border: 1px solid white;
+  width: 80px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  height: 40px;
+  text-decoration: none;
+
+  span {
+    color: white;
+  }
+}
