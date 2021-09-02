@@ -1,10 +1,9 @@
 import React from 'react';
-import { Link, useRouteMatch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import LogInForm from '../../components/forms/LogInForm';
 import styles from './LoginFormPage.module.scss';
 
 function LoginFormPage () {
-  const { url } = useRouteMatch();
   return (
     <>
       <div className={styles.loginContainer}>

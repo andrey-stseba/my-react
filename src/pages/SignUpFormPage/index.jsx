@@ -1,10 +1,9 @@
 import React from 'react';
-import { Link, useRouteMatch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import SignUpForm from '../../components/forms/SignUpForm';
 import styles from './SignUpFormPage.module.scss';
 
 function SignUpPage () {
-  const { url } = useRouteMatch();
   return (
     <>
       <div className={styles.signUpContainer}>

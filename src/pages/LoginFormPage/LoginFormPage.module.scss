@@ -1,8 +1,7 @@
+@import './../../common/styles/vars';
 .loginContainer {
-  box-sizing: border-box;
-  background-color: #3ea9f5;
-  min-width: 600px;
-
+  background-color: $backGForm-color;
+  min-width: $mnw-form;
   width: 100%;
   display: flex;
   flex-direction: column;

@@ -2,25 +2,26 @@
   display: flex;
   flex-direction: column;
 
-  //   justify-content: center;
-  //   align-items: center;
-
-  max-width: 600px;
+  max-width: 800px;
   margin: auto;
-  input {
-    width: 400px;
-  }
-}
 
-.buttonLogin {
-  color: #ffffff;
-  background-color: #28d2d0;
-  border: none;
-  padding: 5px 6px;
-  border-radius: 2px;
-  width: 400px;
-  height: 80px;
-  margin: 20px auto;
-  cursor: pointer;
-  font-size: 16px;
+  input,
+  .buttonLogin {
+    max-width: 320px;
+    min-width: 160px;
+    width: 100%;
+  }
+  .buttonLogin {
+    color: #ffffff;
+    background-color: #28d2d0;
+    border: none;
+    padding: 5px 6px;
+    border-radius: 2px;
+    width: 240px;
+
+    height: 80px;
+    margin: 20px auto;
+    cursor: pointer;
+    font-size: 16px;
+  }
 }
