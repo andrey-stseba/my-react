@@ -18,7 +18,7 @@ function SignUpPage () {
             />
           </a>
           <div className={styles.linkLoginBox}>
-            <Link to={`${url}/login-form`}>
+            <Link to={`/components/login-form`}>
               <span>Login</span>
             </Link>
           </div>

@@ -9,8 +9,6 @@ import {
 import Calendar from './../../components/Calendar';
 import Counter from './../../components/Counter';
 import Greeting from './../../components/Greeting';
-// import LogInForm from './../../components/forms/LogInForm';
-// import SignUpForm from './../../components/forms/SignUpForm';
 import Stopwatch from './../../components/Stopwatch';
 import StopwatchWithTimeout from './../../components/StopwatchWithTimeout';
 import NotFound from './../../components/NotFound';
